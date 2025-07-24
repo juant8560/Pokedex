@@ -1,32 +1,31 @@
 @import "tailwindcss";
 
 body {
-  @apply bg-gray-900 text-white; /* Fondo oscuro azul (gris azulado) y texto blanco */
+  @apply bg-gray-900 text-white;
 }
 
-/* Tarjeta principal */
 .card {
-  @apply bg-gray-800 border border-gray-700 max-w-xs rounded overflow-hidden shadow-lg mx-auto;
+  @apply bg-gray-800 border border-gray-700 rounded shadow-lg mx-auto w-36 h-auto flex flex-col justify-between;
 }
 
-/* Título arriba */
 .card-header {
   @apply p-4 text-xl font-bold text-white text-center;
 }
 
-/* Imagen al centro */
-.card-image {
-  @apply w-full h-48 object-cover;
+.card-image-wrapper {
+  @apply flex justify-center items-center h-40;
 }
 
-/* Cuerpo de la tarjeta */
+.card-image {
+  @apply object-contain h-full mx-auto;
+}
+
 .card-body {
   @apply px-4 py-2 text-gray-300;
 }
 
-/* Pie de la tarjeta con botón rojo */
 .card-footer {
-  @apply mt-4 flex justify-center;
+  @apply mt-2 flex justify-center p-2;
 }
 
 .card-footer button {

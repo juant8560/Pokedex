@@ -15,7 +15,7 @@ function getPokemonIdFromUrl(url) {
 
 const PokeList = () => {
     const [offset, setOffset] = useState(0);
-    const [limit, setLimit] = useState(24);
+    const [limit, setLimit] = useState(25);
     const navigateTo = useNavigate();
     const {
         pokemonJsonObject,
